@@ -17,12 +17,6 @@ install Git git
 install PHP apache2 php5 libapache2-mod-php5
 install PHP-Extensions php5-mysql php5-curl php5-gd php5-intl php-pear php5-imagick php5-imap php5-mcrypt php5-memcache php5-ps php5-pspell php5-recode php5-sqlite php5-tidy php5-xmlrpc php5-xsl
 
-# install webmin
-install Webmin perl libnet-ssleay-perl openssl libauthen-pam-perl libpam-runtime libio-pty-perl apt-show-versions python
-rm webmin_1.760_all.deb 2>&1
-wget http://prdownloads.sourceforge.net/webadmin/webmin_1.760_all.deb 2>&1
-dpkg --install webmin_1.760_all.deb 2>&1
-
 # install databases
 install SQLite sqlite3 libsqlite3-dev
 
